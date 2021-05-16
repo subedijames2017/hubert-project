@@ -42,6 +42,7 @@
     "react-app-polyfill": "^2.0.0",
     "react-dom": "^17.0.2",
     "react-dropzone": "^11.3.2",
+    "react-image-gallery": "^1.0.9",
     "react-redux": "^7.2.3",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
@@ -88,5 +89,6 @@
   "engines": {
     "node": ">=10",
     "npm": ">=6"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }

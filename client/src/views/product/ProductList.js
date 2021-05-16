@@ -12,7 +12,8 @@ import {
   CFade,
   CSwitch,
   CLink,
-  CImg
+  CImg,
+  CSpinner
 } from "@coreui/react";
 import SearchFeature from "../../reusable/SearchFeature";
 
@@ -66,33 +67,45 @@ export default function ProductList() {
     });
   };
   const renderCards = Products.map((product, index) => {
+    console.log(
+      "🚀 ~ file: ProductList.js ~ line 69 ~ renderCards ~ product",
+      product
+    );
     return (
       <CCol xs="12" sm="6" md="3">
-        <CCard>
-          <CCardBody>
-            <CImg
-              src={`http://localhost:5000/${product.images[0]}`}
-              fluid
-              className="mb-2"
-              width="200"
-              height="150"
-            />
-            <p>{product.title}</p>
-            <strong>{`Rs.${product.price}`}</strong>
-            <p>{product.description}</p>
-          </CCardBody>
-        </CCard>
+        <a href={`/product/${product._id}`} className="productDescription">
+          <CCard>
+            <CCardBody>
+              <CImg
+                src={`http://localhost:5000/${product.images[0]}`}
+                fluid
+                className="mb-2"
+                width="200"
+                height="150"
+              />
+              <p>{product.title}</p>
+              <strong>{`Rs.${product.price}`}</strong>
+              <p>{product.description}</p>
+            </CCardBody>
+          </CCard>
+        </a>
       </CCol>
     );
   });
   return (
     <>
-      <CRow>
-        <CCol xs="12" sm="6" md="4">
-          <SearchFeature refreshFunction={updateSearchTerms} />
-        </CCol>
-      </CRow>
-      <CRow>{renderCards}</CRow>
+      {renderCards && renderCards.length > 0 ? (
+        <>
+          <CRow>
+            <CCol xs="12" sm="6" md="4">
+              <SearchFeature refreshFunction={updateSearchTerms} />
+            </CCol>
+          </CRow>
+          <CRow>{renderCards}</CRow>
+        </>
+      ) : (
+        <CSpinner color="primary" className="spiner" />
+      )}
     </>
   );
 }

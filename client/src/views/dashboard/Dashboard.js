@@ -428,7 +428,7 @@ const Dashboard = () => {
                     <td className="text-center">
                       <div className="c-avatar">
                         <img
-                          src={"avatars/1.jpg"}
+                          src={"avatars/admin.png"}
                           className="c-avatar-img"
                           alt="admin@bootstrapmaster.com"
                         />
@@ -473,7 +473,7 @@ const Dashboard = () => {
                     <td className="text-center">
                       <div className="c-avatar">
                         <img
-                          src={"avatars/2.jpg"}
+                          src={"admin.png"}
                           className="c-avatar-img"
                           alt="admin@bootstrapmaster.com"
                         />
@@ -518,7 +518,7 @@ const Dashboard = () => {
                     <td className="text-center">
                       <div className="c-avatar">
                         <img
-                          src={"avatars/3.jpg"}
+                          src={"avatars/admin.png"}
                           className="c-avatar-img"
                           alt="admin@bootstrapmaster.com"
                         />
@@ -563,7 +563,7 @@ const Dashboard = () => {
                     <td className="text-center">
                       <div className="c-avatar">
                         <img
-                          src={"avatars/4.jpg"}
+                          src={"avatars/admin.png"}
                           className="c-avatar-img"
                           alt="admin@bootstrapmaster.com"
                         />
@@ -608,7 +608,7 @@ const Dashboard = () => {
                     <td className="text-center">
                       <div className="c-avatar">
                         <img
-                          src={"avatars/5.jpg"}
+                          src={"avatars/admin.png"}
                           className="c-avatar-img"
                           alt="admin@bootstrapmaster.com"
                         />
@@ -653,7 +653,7 @@ const Dashboard = () => {
                     <td className="text-center">
                       <div className="c-avatar">
                         <img
-                          src={"avatars/6.jpg"}
+                          src={"avatars/admin.png"}
                           className="c-avatar-img"
                           alt="admin@bootstrapmaster.com"
                         />
